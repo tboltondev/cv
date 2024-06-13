@@ -6,28 +6,28 @@
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-     <title>One Page Resume</title>
+     <title>Tom Bolton</title>
 
      <style type="text/css">
         :root { --primary-color: #444; --secondary-color: #999; --tertiary-color: #666; }
         * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; /*background: url(images/noise.jpg);*/ }
         .clear { clear: both; }
         #page-wrap { width: 800px; margin: 40px auto 60px; }
         #pic { float: right; margin: -30px 0 0 0; }
         h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid var(--secondary-color); }
         h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
         h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: var(--secondary-color); font-weight: normal; }
-        p { margin: 0 0 16px 0; }
+        p { margin: 0 0 8px 0; }
         a { color: var(--primary-color); text-decoration: none; border-bottom: 2px dotted var(--primary-color); }
         a:hover { border-bottom-style: solid; color: black; }
         .primary-text { color: var(--primary-color); }
         .secondary-text { color: var(--secondary-color); }
         ul { margin: 0 0 32px 17px; }
-        #objective { padding-bottom: 16px; /* width: 500px; float: left;*/ }
+        #objective { padding-bottom: 4px; /* width: 500px; float: left;*/ }
         #objective p { font-family: Georgia, Serif; font-style: italic; color: var(--tertiary-color); }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid var(--secondary-color);  }
-        dd { width: 600px; float: right; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 100px; float: left; height: 100px; border-right: 1px solid var(--secondary-color);  }
+        dd { width: 650px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
      </style>
 </head>
@@ -52,7 +52,7 @@
                 
         <div id="objective">
             <p>
-                I'm a software engineer with 6 years of experience in JavaScript and Node.js, having worked extensively with plain JavaScript, TypeScript, Express.js and NestJS to build secure, stable and performant APIs. I also have vast experience with SQL and NoSQL databases, and the benefits and techniques for optimising both. Over the past 5 years I have gained experience with AWS, having used S3, Cognito, Lambda, DynamoDB mainly among other services. In each role I have held, I've been
+                I'm a software engineer with 6 years of experience in JavaScript and Node.js, having worked extensively with plain JavaScript, TypeScript, Express.js and NestJS to build secure, stable and performant APIs. I also have vast experience with SQL and NoSQL databases, and the benefits and techniques for optimising both. Over the past 5 years I have gained experience with AWS, having used S3, Cognito, Lambda, DynamoDB mainly among other services.
             </p>
         </div>
         
@@ -64,31 +64,33 @@
             <dt class="secondary-text">Experience</dt>
             <dd>
                 <h2><a target="_blank" rel="noopener noreferrer" href="https://tes.com">Tes</a> <span>Software Engineer | Apr 2022 - Present</span></h2>
+                <p>In my current role at tes.com I'm working on Node.js and Java backend services following clean architecture principles. All features are thoroughly unit tested. The primary services I’ve worked on include:</p>
                 <ul>
-                    <li>Inspired and won highest peasant death competition among servants</li>
-                    <li>Helped coordinate managers to grow cult following</li>
-                    <li>Provided untimely deaths to all who opposed</li>
+                    <li>Authentication and user identity services following OAuth 2.0 standards written in TypeScript using NestJS with AWS Cognito for storing identities, token management and email flows, and PostgreSQL for storing user data. I also fully implemented a RabbitMQ integration in this service to trigger other email flows.</li>
+                    <li>A NestJS service for storing and querying locations with parent/child relationships using MongoDB GeoJSON objects and geospatial queries. I carried out work to improve internal error handling and implemented an error handler for controllers that produced error responses according to the Problem Details specification.</li>
+                    <li>An Express.js service to expose data (stored in MongoDB) of a marketplace for teaching resources to a third party marketplace platform. On this project, I implemented validation middleware using the JSON Schema Validation standard and implemented a number of REST endpoints.</li>
+                    <li>Services for aggregating student data and attendance data written in Java using Spring boot with MongoDB databases and RabbitMQ. In these services I also independently implemented tasks to perform test coverage analysis and produce coverage reports. I also updated the CI/CD pipeline to run these tasks.</li>
                 </ul>
 
                 <h2><a target="_blank" rel="noopener noreferrer" href="https://vitaccess.com">Vitaccess</a> <span>Software Developer | Sep 2020 - Mar 2022</span></h2>
                 <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
+                    <li>Using AWS lambda, DynamoDB and Wordbee flex API I led the development of a localisation backend service. The Node.js lambda function was exposed as an API endpoint using API Gateway, and could store new localisation keys and translation data in DynamoDB, update the data and query translation content by localisation key and language.</li>
+                    <li>Worked on a number of projects for collecting medical survey data across the full stack with a focus on backend with Node.js, TypeScript, GraphQL and Google firebase.</li>
                 </ul> 
 
                 <h2><a target="_blank" rel="noopener noreferrer" href="https://entrepreneurseminar.com">Entrepreneur Seminar</a> <span>Full Stack Developer | Aug 2019 - Aug 2020</span></h2>
+                <p>I implemented features spanning front and back end, managed deployments, database migrations and the server environment. The backend system was built with Node.js and Express, using TypeORM with a MySQL database. Some of the things I worked on:</p>
                 <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
+                    <li>Extended the existing admin site to include a CMS for creating and publishing blog articles on the main site. This involved work on the backend to create secure admin endpoints for creating/publishing articles, public endpoints for the main site to retrieve the content, and using the AWS sdk to connect to S3 to store image and video assets uploaded as part of the articles.</li>
+                    <li>Updated payment flows using Stripe and independantly added PayPal support. This required backend work to securely access the PayPal API and creating database migrations to update the schema of the payments table.</li>
+                    <li>Created stored procedures on the MySQL database for producing reports on customer data.
+                    <li>API endpoints used for recording users' viewing activity of videos in a paid course.</li>
                 </ul> 
 
                 <h2><a target="_blank" rel="noopener noreferrer" href="https://schroders.com">Schroders</a> <span>Software Development Internship | Jul 2017 - Jun 2018</span></h2>
                 <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
+                    <li>Worked on a Node.js / Express API for aggregrating internal company data.</li>
+                    <li>Created unit tests with Jest and enzyme.</li>
                 </ul> 
             </dd>
 
@@ -103,11 +105,6 @@
                     <li>Received 1st class grading in final year project: analysis of x-ray diffraction data using Python, NumPy and pandas.</li>
                 </ul>
             </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt class="secondary-text">Hobbies</dt>
-            <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
             
             <dd class="clear"></dd>
             
