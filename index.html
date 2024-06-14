@@ -54,13 +54,18 @@
         
             <p>
             <!-- Cell: <span class="tel">555-666-7777</span><br /> -->
+<<<<<<< Updated upstream
                 Email: <a class="email" href="mailto:tom@tombolton.dev">tom@tombolton.dev</a>
+=======
+            <div>Email: <a class="email" href="mailto:t.w.bolton@outlook.com">t.w.bolton@outlook.com</a></div>
+            <div>GitHub: <a target="_blank" rel="noopener noreferrer" href="https://github.com/abu-hiba">github.com/abu-hiba</a></div>
+>>>>>>> Stashed changes
             </p>
         </div>
                 
         <div id="objective">
             <p>
-                I'm a software engineer with 6 years of experience in JavaScript and Node.js, having worked extensively with plain JavaScript, TypeScript, Express.js and NestJS to build secure, stable and performant APIs. I also have vast experience with SQL and NoSQL databases, and the benefits and techniques for optimising both. Over the past 5 years I have gained experience with AWS, having used S3, Cognito, Lambda, DynamoDB among other services.
+            I'm a software engineer with 6 years of experience in JavaScript and Node.js, having worked extensively with plain JavaScript, TypeScript, Express.js and NestJS. I also have experience working with a variety of SQL and NoSQL databases and other technologies such as container platforms and message brokers. After working with AWS for around 5 years I've recently been <a target="_blank" rel="noopener noreferrer" href="https://github.com/abu-hiba/cognito-authn-service">learning Terraform</a> to provision infrastructure as code. I'm also interested in WebAssembly and have been starting to <a target="_blank" rel="noopener noreferrer" href="https://github.com/abu-hiba/wasm-cpp-base">explore it</a>.
             </p>
         </div>
         
@@ -72,7 +77,7 @@
             <dt class="secondary-text">Experience</dt>
             <dd>
                 <h2><a target="_blank" rel="noopener noreferrer" href="https://tes.com">Tes</a> <span>Software Engineer | Apr 2022 - Present</span></h2>
-                <p>In my current role at tes.com I'm working on Node.js and Java backend services following clean architecture principles. All features are thoroughly unit tested. The primary services I’ve worked on include:</p>
+                <p>In my current role at tes.com I'm working on Node.js and Java microservices following clean architecture principles. The primary services I’ve worked on include:</p>
                 <ul>
                     <li>Authentication and user identity services following OAuth 2.0 standards written in TypeScript using NestJS with AWS Cognito for storing identities, token management and email flows, and PostgreSQL for storing user data. I also fully implemented a RabbitMQ integration in this service to trigger other email flows.</li>
                     <li>A NestJS service for storing and querying locations with parent/child relationships using MongoDB GeoJSON objects and geospatial queries. I carried out work to improve internal error handling and implemented an error handler for controllers that produced error responses according to the Problem Details specification.</li>
@@ -89,8 +94,8 @@
                 <h2><a target="_blank" rel="noopener noreferrer" href="https://entrepreneurseminar.com">Entrepreneur Seminar</a> <span>Full Stack Developer | Aug 2019 - Aug 2020</span></h2>
                 <p>I implemented features spanning front and back end, managed deployments, database migrations and the server environment. The backend system was built with Node.js and Express, using TypeORM with a MySQL database. Some of the things I worked on:</p>
                 <ul>
-                    <li>Extended the existing admin site to include a CMS for creating and publishing blog articles on the main site. This involved work on the backend to create secure admin endpoints for creating/publishing articles, public endpoints for the main site to retrieve the content, and using the AWS sdk to connect to S3 to store image and video assets uploaded as part of the articles.</li>
-                    <li>Updated payment flows using Stripe and independantly added PayPal support. This required backend work to securely access the PayPal API and creating database migrations to update the schema of the payments table.</li>
+                    <li>Extended the existing admin site to include a CMS for creating and publishing blog articles on the main site. Using AWS S3 and MySQL in an Express.js backend.</li>
+                    <li>Updated payment flows using Stripe and independantly added PayPal support. This required creating database migrations to update the schema of the payments table.</li>
                     <li>Created stored procedures on the MySQL database for producing reports on customer data.
                     <li>API endpoints used for recording users' viewing activity of videos in a paid course.</li>
                 </ul> 
